@@ -19,7 +19,7 @@ public class AlienController {
 
     @GetMapping("aliens")
 //    @ResponseBody //tells that this method has to send direct data and dont apply prefix suffix
-    public List getAliens(){
+    public List<Alien> getAliens(){
         List<Alien> aliens = repo.findAll();
         return aliens;
     }
